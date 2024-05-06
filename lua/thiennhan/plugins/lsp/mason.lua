@@ -27,7 +27,6 @@ return {
         "html",
         "kotlin_language_server",
         "lua_ls",
-        "tailwindcss",
         "tsserver",
         "vuels",
       },

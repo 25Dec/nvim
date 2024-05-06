@@ -13,6 +13,14 @@ return {
       highlight = { enable = true },
       indent = { enable = true },
       autotag = { enable = true },
+      ensure_installed = {
+        "bash",
+        "markdown",
+        "markdown_inline",
+        "vim",
+        "lua",
+        "regex",
+      },
     })
 
     require("nvim-treesitter.install").compilers = { "gcc" }
