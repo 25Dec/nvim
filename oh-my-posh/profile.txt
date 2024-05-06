@@ -1,15 +1,11 @@
-oh-my-posh init pwsh --config 'C:\Users\thien\AppData\Local\Programs\oh-my-posh\themes\json.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/zash.omp.json" | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
-
 Import-Module PSReadLine
 
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
-
 Set-PSReadLineOption -PredictionViewStyle ListView
-
 Set-PSReadLineOption -EditMode Windows
-
 Set-PSReadLineOption -HistoryNoDuplicates
 
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
