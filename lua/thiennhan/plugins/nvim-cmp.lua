@@ -1,6 +1,6 @@
 return {
   "hrsh7th/nvim-cmp",
-  event = "InsertEnter",
+  event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
     "hrsh7th/cmp-buffer", -- source for text in buffer
     "hrsh7th/cmp-path", -- source for file system paths
@@ -75,6 +75,13 @@ return {
 
     -- completions for searching
     cmp.setup.cmdline("/", {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = {
+        { name = "buffer" },
+      },
+    })
+
+    cmp.setup.cmdline("?", {
       mapping = cmp.mapping.preset.cmdline(),
       sources = {
         { name = "buffer" },
