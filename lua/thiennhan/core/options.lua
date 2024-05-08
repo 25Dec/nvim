@@ -6,8 +6,8 @@ vim.cmd("let g:minimap_auto_start_win_enter = 1")
 local opt = vim.opt
 
 -- tabs & indentation
-opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
-opt.shiftwidth = 2 -- 2 spaces for indent width
+opt.tabstop = 4 -- 2 spaces for tabs (prettier default)
+opt.shiftwidth = 4 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 opt.wrap = false
@@ -32,6 +32,11 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- encoding
+vim.scriptencoding = "utf-8"
+opt.fileencoding = "utf-8"
+opt.encoding = "utf-8"
 
 -- others
 opt.relativenumber = true
