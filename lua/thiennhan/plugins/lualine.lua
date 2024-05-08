@@ -43,7 +43,10 @@ return {
     lualine.setup({
       options = {
         theme = my_lualine_theme,
-        disabled_filetypes = { "packer", "NvimTree" },
+        disabled_filetypes = {
+          "packer",
+          "NvimTree",
+        },
       },
       sections = {
         lualine_a = { "mode" },

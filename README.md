@@ -12,6 +12,4 @@ C:\Users\{your-computer-name}\AppData\Local\nvim
 - git
 
 # Fonts
-
-- Meslo
-- Nerd Font
+- Hack Nerd Font

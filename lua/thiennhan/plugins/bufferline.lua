@@ -2,13 +2,17 @@ return {
   "akinsho/bufferline.nvim",
   version = "*",
   dependencies = { "nvim-tree/nvim-web-devicons" },
-  opts = {
-    options = {
-      mode = "tabs",
-      indicator = {
-        style = "none",
+  config = function()
+    local bufferline = require("bufferline")
+    bufferline.setup({
+      highlights = require("catppuccin.groups.integrations.bufferline").get(),
+      options = {
+        mode = "tabs",
+        indicator = {
+          style = "none",
+        },
+        separator_style = { "", "" },
       },
-      separator_style = { "", "" },
-    },
-  },
+    })
+  end,
 }

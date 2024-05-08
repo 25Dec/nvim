@@ -70,15 +70,8 @@ return {
     end
 
     mason_lspconfig.setup_handlers({
-      -- default handler for installed servers
       function(server_name)
         lspconfig[server_name].setup({
-          capabilities = capabilities,
-        })
-      end,
-
-      ["clangd"] = function()
-        lspconfig["clangd"].setup({
           capabilities = capabilities,
         })
       end,
@@ -103,12 +96,6 @@ return {
 
       ["lua_ls"] = function()
         lspconfig["lua_ls"].setup({
-          capabilities = capabilities,
-        })
-      end,
-
-      ["tailwindcss"] = function()
-        lspconfig["tailwindcss"].setup({
           capabilities = capabilities,
         })
       end,

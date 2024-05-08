@@ -4,13 +4,13 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup({
-      flavour = "macchiato", -- latte, frappe, macchiato, mocha
+      flavour = "mocha", -- latte, frappe, macchiato, mocha
       background = {
         light = "latte",
-        dark = "macchiato",
+        dark = "mocha",
       },
       transparent_background = true,
-      show_end_of_buffer = false,
+      show_end_of_buffer = true,
       term_colors = true,
       dim_inactive = {
         enabled = false,
@@ -39,18 +39,13 @@ return {
       default_integrations = true,
       integrations = {
         cmp = true,
-        gitsigns = true,
         nvimtree = true,
         treesitter = true,
-        notify = true,
-        mini = {
-          enabled = true,
-          indentscope_color = "",
-        },
         telescope = {
           enabled = true,
-          style = "nvchad",
         },
+        rainbow_delimiters = true,
+        mason = false,
       },
     })
 
