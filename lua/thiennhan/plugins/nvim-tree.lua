@@ -11,7 +11,7 @@ return {
       view = {
         width = 35,
         relativenumber = true,
-        cursorline = false,
+        cursorline = true,
       },
       renderer = {
         icons = {

@@ -37,3 +37,4 @@ opt.swapfile = false
 opt.relativenumber = true
 opt.number = true
 opt.fillchars = { eob = " " } -- get rid of character "~"
+opt.cursorline = true

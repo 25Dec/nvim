@@ -19,6 +19,14 @@ return {
     keymap.set("n", "<leader>fc", builtin.grep_string, { desc = "Searches for the string under cursor in cwd" })
     keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "Search for a string in cwd" })
 
+    telescope.setup({
+      defaults = {
+        preview = {
+          treesitter = false,
+        },
+      },
+    })
+
     telescope.load_extension("fzf")
   end,
 }
