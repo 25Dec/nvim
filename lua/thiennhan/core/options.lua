@@ -38,6 +38,9 @@ vim.scriptencoding = "utf-8"
 opt.fileencoding = "utf-8"
 opt.encoding = "utf-8"
 
+-- set default terminal
+-- opt.shell = "powershell"
+
 -- others
 opt.relativenumber = true
 opt.number = true

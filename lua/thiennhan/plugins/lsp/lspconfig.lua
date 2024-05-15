@@ -88,18 +88,6 @@ return {
         })
       end,
 
-      ["kotlin_language_server"] = function()
-        lspconfig["kotlin_language_server"].setup({
-          capabilities = capabilities,
-        })
-      end,
-
-      ["lua_ls"] = function()
-        lspconfig["lua_ls"].setup({
-          capabilities = capabilities,
-        })
-      end,
-
       ["tsserver"] = function()
         lspconfig["tsserver"].setup({
           capabilities = capabilities,
@@ -108,6 +96,12 @@ return {
 
       ["vuels"] = function()
         lspconfig["vuels"].setup({
+          capabilities = capabilities,
+        })
+      end,
+
+      ["lua_ls"] = function()
+        lspconfig["lua_ls"].setup({
           capabilities = capabilities,
         })
       end,

@@ -23,10 +23,9 @@ return {
       ensure_installed = {
         "cssls",
         "html",
-        "kotlin_language_server",
-        "lua_ls",
         "tsserver",
         "vuels",
+        "lua_ls",
       },
     })
 

@@ -1,8 +1,9 @@
 # Path
 
-C:\Users\{your-computer-name}\AppData\Local\nvim
+Windows: C:\Users\{your-computer-name}\AppData\Local\nvim
+Debian: /root/.config/nvim
 
-# Import Choco Packages
+# Must Have Packages
 
 - fd
 - fzf
@@ -12,4 +13,5 @@ C:\Users\{your-computer-name}\AppData\Local\nvim
 - git
 
 # Fonts
+
 - Hack Nerd Font
