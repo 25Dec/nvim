@@ -1,7 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
-vim.cmd("let g:minimap_width = 10")
-vim.cmd("let g:minimap_auto_start = 1")
-vim.cmd("let g:minimap_auto_start_win_enter = 1")
+
 
 local opt = vim.opt
 
@@ -37,9 +35,6 @@ opt.swapfile = false
 vim.scriptencoding = "utf-8"
 opt.fileencoding = "utf-8"
 opt.encoding = "utf-8"
-
--- set default terminal
--- opt.shell = "powershell"
 
 -- others
 opt.relativenumber = true
