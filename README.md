@@ -1,7 +1,9 @@
 # Default Path
 
-- Windows: C:\Users\{your-computer-name}\AppData\Local\nvim
-- Fedora: /root/.config/nvim
+- Windows: C:\Users\{user-name}\AppData\Local\nvim
+- Fedora:
+  /home/{user-name}/.config/nvim
+  /root/.config/nvim
 
 # Packages Manager
 
@@ -16,7 +18,6 @@
 - git
 - ripgrep
 - mingw (Windows only)
-- tmux (Linux only)
 
 # Fonts
 
