@@ -1,6 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
-
 local opt = vim.opt
 
 -- tabs & indentation
@@ -41,3 +40,4 @@ opt.relativenumber = true
 opt.number = true
 opt.fillchars = { eob = " " } -- get rid of character "~"
 opt.cursorline = true
+opt.shell = "C:/Program Files/PowerShell/7/pwsh.exe"
