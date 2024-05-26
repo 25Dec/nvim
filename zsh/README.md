@@ -1,6 +1,7 @@
 # Default Path for .zshrc
 
-/home/{username}/.zshrc
+/home/{username}/.zshrc (For normal user)
+/root/.zshrc (For super ush)
 
 # Installing ZSH and OH-MY-ZSH
 

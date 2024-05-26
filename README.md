@@ -2,8 +2,8 @@
 
 - Windows: C:\Users\\{username}\AppData\Local\nvim
 - Linux:
-  - /home/{username}/.config/nvim
-  - /root/.config/nvim
+  - /home/{username}/.config/nvim (For normal user)
+  - /root/.config/nvim (for super user)
 
 # Must Have Packages
 
