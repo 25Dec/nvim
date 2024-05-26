@@ -1,9 +1,9 @@
 # Default Path
 
-- Windows: C:\Users\{user-name}\AppData\Local\nvim
+- Windows: C:\Users\\{user-name}\AppData\Local\nvim
 - Fedora:
-  /home/{user-name}/.config/nvim
-  /root/.config/nvim
+    - /home/{user-name}/.config/nvim
+    - /root/.config/nvim
 
 # Packages Manager
 
@@ -12,7 +12,7 @@
 
 # Must Have Packages
 
-- fd
+- fd (fd-find for Linux)
 - fzf
 - make
 - git
@@ -34,11 +34,3 @@ Use Hack Nerd Font
 
 - sudo dnf update (Update all packages)
 - sudo dnf autoremove (Uninstall any dependency that is not required by any installed packages)
-- Install Tweakes, gnome-extensions in Gnome Software Center
-
-## Installing ZSH
-
-1. sudo dnf install zsh
-2. sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-3. Go to Terminal Preferences -> Profiles -> Command -> Enable "Run a custom command..." -> Fill in "/usr/bin/zsh"
-4. Video guide: https://www.youtube.com/watch?v=z7wzRKkYdFg&t=1s
