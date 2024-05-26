@@ -1,14 +1,9 @@
-# Default Path
+# Default Path for NVIM
 
-- Windows: C:\Users\\{user-name}\AppData\Local\nvim
-- Fedora:
-    - /home/{user-name}/.config/nvim
-    - /root/.config/nvim
-
-# Packages Manager
-
-- Windows: chocolately
-- Fedora: dnf
+- Windows: C:\Users\\{username}\AppData\Local\nvim
+- Linux:
+  - /home/{username}/.config/nvim
+  - /root/.config/nvim
 
 # Must Have Packages
 
@@ -17,6 +12,7 @@
 - make
 - git
 - ripgrep
+- tmux (Linux only)
 - mingw (Windows only)
 
 # Fonts
@@ -29,8 +25,3 @@ Use Hack Nerd Font
   2. Extract
   3. Put the extracted folder into /usr/share/fonts
   4. Rebuild font cache by running fc-cache -f -v
-
-# Things To Do After Installing Fedora
-
-- sudo dnf update (Update all packages)
-- sudo dnf autoremove (Uninstall any dependency that is not required by any installed packages)
