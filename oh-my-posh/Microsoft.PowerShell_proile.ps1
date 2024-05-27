@@ -1,8 +1,11 @@
+# Setup oh-my-posh
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/robbyrussell.omp.json" | Invoke-Expression
 
+# Setup Icons for Terminal
 Import-Module -Name Terminal-Icons
-Import-Module PSReadLine
 
+# Setup Command Suggestions 
+Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
