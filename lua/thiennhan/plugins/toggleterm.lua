@@ -3,7 +3,7 @@ return {
   -- version = "*",
   config = function()
     local powershell_options = {
-      shell = vim.fn.executable("pwsh") == 1 and "pwsh" or "powershell" or "/bin/zsh",
+      shell = vim.fn.executable("pwsh") == 1 and "pwsh" or "powershell" or "zsh",
       shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
       shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
       shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
@@ -16,7 +16,6 @@ return {
     end
 
     require("toggleterm").setup({
-      size = 20,
       open_mapping = [[<c-t>]],
       hide_numbers = true,
       shade_filetypes = {},
