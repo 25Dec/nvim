@@ -15,6 +15,7 @@ return {
       autotag = { enable = true },
       ensure_installed = {
         "bash",
+        "dockerfile",
         "markdown",
         "markdown_inline",
         "vim",
