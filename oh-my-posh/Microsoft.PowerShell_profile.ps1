@@ -2,7 +2,7 @@
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/robbyrussell.omp.json" | Invoke-Expression
 
 # Setup Icons for Terminal
-# Install-Module -Name Terminal-Icons -Repository PSGallery
+# Install-Module -Name Terminal-Icons -Repository PSGallery -Scope CurrentUser
 Import-Module -Name Terminal-Icons
 
 # Setup Command Suggestions 
